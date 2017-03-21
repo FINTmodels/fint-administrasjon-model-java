@@ -1,12 +1,19 @@
 package no.fint.model.administrasjon.kodeverk;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import no.fint.model.felles.Identifikator;
+import no.fint.model.felles.Periode;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-public class Funksjon {
+@EqualsAndHashCode(callSuper = true)
+public class Funksjon extends Begrep {
     private Funksjon forelder;
+
+    public Funksjon(Identifikator systemId, String kode, String navn, Periode gyldighetsperiode, Funksjon forelder) {
+        super(systemId, kode, navn, gyldighetsperiode);
+        this.forelder = forelder;
+    }
 }

@@ -5,15 +5,13 @@ plugins {
 apply plugin: 'java'
 apply plugin: 'maven'
 
-version = '1.0.0-rc.2'
+version = '1.0.0-rc.2.0'
 sourceCompatibility = 1.8
 
 jar {
 	baseName = 'fint-administrasjon-model-java'
 	version = version
 }
-
-println jar.baseName
 
 repositories {
 	maven {
@@ -26,7 +24,6 @@ apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.2
 dependencies {
 	compile('no.fint:fint-felles-model-java:1.0.0-rc.2')
 	compileOnly("org.projectlombok:lombok:${lombokVersion}")
-
 }
 
 if (project.hasProperty('bintrayUser') && project.hasProperty('bintrayKey')) {
