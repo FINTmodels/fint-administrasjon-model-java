@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import no.fint.model.felles.Begrep;
 import no.fint.model.felles.Identifikator;
 import no.fint.model.felles.Periode;
 

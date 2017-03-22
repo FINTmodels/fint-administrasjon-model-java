@@ -13,9 +13,14 @@ import no.fint.model.felles.Periode;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
 public class Arbeidsforhold {
-    private Identifikator brukernavn;
     private Identifikator systemId;
-    private Identifikator ansattnummer;
-    private Periode ansettelsesperiode;
+    private String stillingsnummer;
+    private boolean aktiv;
+    private double arslonn;
+    private String stillingstittel;
+    private double ansettelsesprosent;
+    private double lonnsprosent;
+    private boolean hovedstilling;
+    private Periode gyldighetsperiode;
     private Kontaktinformasjon kontaktinformasjon;
 }

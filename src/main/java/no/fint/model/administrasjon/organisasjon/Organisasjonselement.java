@@ -16,11 +16,8 @@ import no.fint.model.felles.Periode;
 public class Organisasjonselement {
     private String navn;
     private String kortnavn;
-    private Personalressurs leder;
-    private boolean erAktiv;
-    private Organisasjonselement overordnet;
-    private Ansvar foreslaattAnsvar;
-    private Identifikator orgId;
-    private Identifikator orgKode;
+    private boolean aktiv;
+    private Identifikator organisasjonsId;
+    private Identifikator organisasjonsKode;
     private Periode gyldighetsperiode;
 }
