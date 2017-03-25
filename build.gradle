@@ -5,7 +5,7 @@ plugins {
 apply plugin: 'java'
 apply plugin: 'maven'
 
-version = '1.0.0-SNAPSHOT'
+version = '1.0.0-rc.2.3'
 sourceCompatibility = 1.8
 
 jar {
@@ -22,7 +22,7 @@ repositories {
 
 apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.2/dependencies.gradle'
 dependencies {
-	compile('no.fint:fint-felles-model-java:1.0.0-rc.2.0')
+	compile('no.fint:fint-felles-model-java:1.0.0-rc.2.1')
 	compileOnly("org.projectlombok:lombok:${lombokVersion}")
 }
 
