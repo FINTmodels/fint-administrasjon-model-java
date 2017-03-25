@@ -11,10 +11,9 @@ import no.fint.model.felles.Periode;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 public class Funksjon extends Begrep {
-    private Funksjon forelder;
+    public static final String RELASJON_FUNKSJON_FORELDER = "urn:fint.no:funskjon:forelder:funksjon.systemid:funksjon.systemid";
 
-    public Funksjon(Identifikator systemId, String kode, String navn, Periode gyldighetsperiode, Funksjon forelder) {
+    public Funksjon(Identifikator systemId, String kode, String navn, Periode gyldighetsperiode) {
         super(systemId, kode, navn, gyldighetsperiode);
-        this.forelder = forelder;
     }
 }

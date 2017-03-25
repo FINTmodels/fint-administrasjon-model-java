@@ -11,10 +11,9 @@ import no.fint.model.felles.Periode;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 public class Arbeidsforholdstype extends Begrep {
-    private Arbeidsforholdstype forelder;
+    public static final String RELASJON_ARBEIDSFORHOLDSTYPE_FORELDER = "urn:fint.no:arbeidsforholdstype:forelder:arbeidsforholdstype.systemid:arbeidsforholdstype.systemid";
 
-    public Arbeidsforholdstype(Identifikator systemId, String kode, String navn, Periode gyldighetsperiode, Arbeidsforholdstype forelder) {
+    public Arbeidsforholdstype(Identifikator systemId, String kode, String navn, Periode gyldighetsperiode) {
         super(systemId, kode, navn, gyldighetsperiode);
-        this.forelder = forelder;
     }
 }
