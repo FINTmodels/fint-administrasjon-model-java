@@ -4,22 +4,38 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import no.fint.model.administrasjon.kodeverk.*;
+import no.fint.model.administrasjon.organisasjon.Organisasjonselement;
 import no.fint.model.felles.Identifikator;
 import no.fint.model.felles.Kontaktinformasjon;
 import no.fint.model.felles.Periode;
+import no.fint.model.relation.RelationType;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
 public class Arbeidsforhold {
-    public static String RELASJON_ARBEIDSFORHOLD_PERSONALRESSURS = "urn:fint.no:arbeidsforhold:personalressurs:arbeidsforhold.systemid:personalressurs.ansattnummer";
-    public static String RELASJON_ARBEIDSFORHOLD_ORGANISASJON = "urn:fint.no:arbeidsforhold:organisasjon:arbeidsforhold.systemid:organisasjosnelement.orgid";
-    public static String RELASJON_ARBEIDSFORHOLD_ARBEIDSFORHOLDSTYPE = "urn:fint.no:arbeidsforhold:arbeidsforholdstype:arbeidsforhold.systemid:arbeidsforholdstype.systemid";
-    public static String RELASJON_ARBEIDSFORHOLD_STILLINGSKODE = "urn:fint.no:arbeidsforhold:stillingskode:arbeidsforhold.systemid:stillingskode.systemid";
-    public static String RELASJON_ARBEIDSFORHOLD_ANSVAR = "urn:fint.no:arbeidsforhold:ansvar:arbeidsforhold.systemid:ansvar.systemid";
-    public static String RELASJON_ARBEIDSFORHOLD_FUNKSJON = "urn:fint.no:arbeidsforhold:funksjon:arbeidsforhold.systemid:funksjon.systemid";
-    public static String RELASJON_ARBEIDSFORHOLD_TIMEPRUKE = "urn:fint.no:arbeidsforhold:timerpruke:arbeidsforhold.systemid:timerpruke.systemid";
+    public static String REL_ID_PERSONALRESSURS = new RelationType.Builder()
+            .namespace("fint.no").relationName("personalressurs").main(Arbeidsforhold.class, "systemid").related(Personalressurs.class, "ansattnummer").buildTypeString();
+
+    public static String REL_ID_ORGANISASJON = new RelationType.Builder()
+            .namespace("fint.no").relationName("organisasjon").main(Arbeidsforhold.class, "systemid").related(Organisasjonselement.class, "orgid").buildTypeString();
+
+    public static String REL_ID_ARBEIDSFORHOLDSTYPE = new RelationType.Builder()
+            .namespace("fint.no").relationName("arbeidsforholdstype").main(Arbeidsforhold.class, "systemid").related(Arbeidsforholdstype.class, "systemid").buildTypeString();
+
+    public static String REL_ID_STILLINGSKODE = new RelationType.Builder()
+            .namespace("fint.no").relationName("stillingskode").main(Arbeidsforhold.class, "systemid").related(Stillingskode.class, "systemid").buildTypeString();
+
+    public static String REL_ID_ANSVAR = new RelationType.Builder()
+            .namespace("fint.no").relationName("ansvar").main(Arbeidsforhold.class, "systemid").related(Ansvar.class, "systemid").buildTypeString();
+
+    public static String REL_ID_FUNKSJON = new RelationType.Builder()
+            .namespace("fint.no").relationName("funksjon").main(Arbeidsforhold.class, "systemid").related(Funksjon.class, "systemid").buildTypeString();
+
+    public static String REL_ID_TIMEPRUKE = new RelationType.Builder()
+            .namespace("fint.no").relationName("timerperuke").main(Arbeidsforhold.class, "systemid").related(TimerPerUkeKode.class, "systemid").buildTypeString();
 
     private Identifikator systemId;
     private String stillingsnummer;

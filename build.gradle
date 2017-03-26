@@ -1,31 +1,38 @@
 plugins {
-	id "com.jfrog.bintray" version "1.7.3"
+    id "com.jfrog.bintray" version "1.7.3"
 }
 
 apply plugin: 'java'
 apply plugin: 'maven'
 
-version = '1.0.0-rc.2.3'
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 jar {
-	baseName = 'fint-administrasjon-model-java'
-	version = version
+    baseName = 'fint-administrasjon-model-java'
+    version = '1.0.0-rc.2.4'
 }
 
 repositories {
-	maven {
-		url "http://dl.bintray.com/fint/maven"
-	}
-	mavenCentral()
+    maven {
+        url "http://dl.bintray.com/fint/maven"
+    }
+    mavenCentral()
 }
 
 apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.2/dependencies.gradle'
 dependencies {
-	compile('no.fint:fint-felles-model-java:1.0.0-rc.2.1')
-	compileOnly("org.projectlombok:lombok:${lombokVersion}")
+    compile('no.fint:fint-relation-model:0.0.5')
+    compile('no.fint:fint-felles-model-java:1.0.0-rc.2.1')
+    compileOnly("org.projectlombok:lombok:${lombokVersion}")
+
+    testCompile('org.spockframework:spock-core:1.1-groovy-2.4-rc-3')
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = gradleVersion
 }
 
 if (project.hasProperty('bintrayUser') && project.hasProperty('bintrayKey')) {
-	apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.2/bintray.gradle'
+    apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.2/bintray.gradle'
 }
