@@ -6,15 +6,13 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import no.fint.model.administrasjon.personal.Arbeidsforhold;
 import no.fint.model.administrasjon.personal.Personalressurs;
-import no.fint.model.felles.Identifikator;
-import no.fint.model.felles.Periode;
+import no.fint.model.felles.*;
 import no.fint.model.relation.RelationType;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode(callSuper = false)
-public class Organisasjonselement {
+@EqualsAndHashCode(callSuper = true)
+public class Organisasjonselement extends Enhet {
     public static final String REL_ID_ORGANISASJON = new RelationType.Builder()
             .namespace("fint.no").relationName("overordnet").main(Organisasjonselement.class, "orgid").related(Organisasjonselement.class, "orgid").buildTypeString();
 
@@ -30,4 +28,14 @@ public class Organisasjonselement {
     private Identifikator organisasjonsId;
     private Identifikator organisasjonsKode;
     private Periode gyldighetsperiode;
+
+    public Organisasjonselement(Kontaktinformasjon kontaktinformasjon, Adresse postadresse, Identifikator organisasjonsnummer, String organisasjonsnavn, Adresse forretningsadresse, String navn, String kortnavn, boolean aktiv, Identifikator organisasjonsId, Identifikator organisasjonsKode, Periode gyldighetsperiode) {
+        super(kontaktinformasjon, postadresse, organisasjonsnummer, organisasjonsnavn, forretningsadresse);
+        this.navn = navn;
+        this.kortnavn = kortnavn;
+        this.aktiv = aktiv;
+        this.organisasjonsId = organisasjonsId;
+        this.organisasjonsKode = organisasjonsKode;
+        this.gyldighetsperiode = gyldighetsperiode;
+    }
 }
