@@ -1,6 +1,6 @@
 # FINT informasjonsmodeller for Java
 
-*Siste versjon: 1.0.0-rc.2.7*
+*Siste versjon: 1.0.0-rc.2.8*
 
 Inneholder modeller for administrasjonsdomenet (tjenesteområdet)
 
