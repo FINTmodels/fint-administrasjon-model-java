@@ -1,5 +1,6 @@
 package no.fint.model.administrasjon.personal;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -9,13 +10,14 @@ import no.fint.model.administrasjon.organisasjon.Organisasjonselement;
 import no.fint.model.felles.Identifikator;
 import no.fint.model.felles.Kontaktinformasjon;
 import no.fint.model.felles.Periode;
+import no.fint.model.relation.Identifiable;
 import no.fint.model.relation.RelationType;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-public class Arbeidsforhold {
+public class Arbeidsforhold implements Identifiable {
     public static String REL_ID_PERSONALRESSURS = new RelationType.Builder()
             .namespace("fint.no").relationName("personalressurs").main(Arbeidsforhold.class, "systemid").related(Personalressurs.class, "ansattnummer").buildTypeString();
 
@@ -48,4 +50,9 @@ public class Arbeidsforhold {
     private Periode gyldighetsperiode;
     private Kontaktinformasjon kontaktinformasjon;
 
+    @JsonIgnore
+    @Override
+    public String getId() {
+        return this.getSystemId().getIdentifikatorverdi();
+    }
 }

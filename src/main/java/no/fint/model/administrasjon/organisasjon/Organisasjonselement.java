@@ -1,18 +1,19 @@
 package no.fint.model.administrasjon.organisasjon;
 
-import lombok.AllArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import no.fint.model.administrasjon.personal.Arbeidsforhold;
 import no.fint.model.administrasjon.personal.Personalressurs;
 import no.fint.model.felles.*;
+import no.fint.model.relation.Identifiable;
 import no.fint.model.relation.RelationType;
 
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-public class Organisasjonselement extends Enhet {
+public class Organisasjonselement extends Enhet implements Identifiable {
     public static final String REL_ID_ORGANISASJON = new RelationType.Builder()
             .namespace("fint.no").relationName("overordnet").main(Organisasjonselement.class, "orgid").related(Organisasjonselement.class, "orgid").buildTypeString();
 
@@ -37,5 +38,11 @@ public class Organisasjonselement extends Enhet {
         this.organisasjonsId = organisasjonsId;
         this.organisasjonsKode = organisasjonsKode;
         this.gyldighetsperiode = gyldighetsperiode;
+    }
+
+    @JsonIgnore
+    @Override
+    public String getId() {
+        return this.getOrganisasjonsId().getIdentifikatorverdi();
     }
 }
