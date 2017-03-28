@@ -22,7 +22,7 @@ public class Personalressurs implements Identifiable {
             .namespace("fint.no").relationName("person").main(Personalressurs.class, "ansattnummer").related(Person.class, "fodselsnummer").buildTypeString();
 
     public static final String REL_ID_ARBEIDSFORHOLD = new RelationType.Builder()
-            .namespace("fint.no").relationName("personalressurs").main(Personalressurs.class, "ansattnummer").related(Arbeidsforhold.class, "systemid").buildTypeString();
+            .namespace("fint.no").relationName("arbeidsforhold").main(Personalressurs.class, "ansattnummer").related(Arbeidsforhold.class, "systemid").buildTypeString();
 
     public static final String REL_ID_PERSONALRESSURSKATEGORI = new RelationType.Builder()
             .namespace("fint.no").relationName("personalressurskategori").main(Personalressurs.class, "ansattnummer").related(Personalressurskategori.class, "systemid").buildTypeString();
