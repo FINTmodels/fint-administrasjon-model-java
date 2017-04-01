@@ -3,18 +3,16 @@ package no.fint.model.administrasjon.personal;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import no.fint.model.felles.Identifikator;
 import no.fint.model.felles.Kontaktinformasjon;
 import no.fint.model.felles.Periode;
-import no.fint.model.relation.FintModel;
-import no.fint.model.relation.Relation;
-
-import java.util.ArrayList;
-import java.util.List;
+import no.fint.model.relation.Identifiable;
 
 @Data
+@NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-public class Personalressurs implements FintModel {
+public class Personalressurs implements Identifiable {
     public enum Relasjonsnavn {
         PERSON,
         ARBEIDSFORHOLD,
@@ -26,11 +24,6 @@ public class Personalressurs implements FintModel {
     private Identifikator ansattnummer;
     private Periode ansettelsesperiode;
     private Kontaktinformasjon kontaktinformasjon;
-    private List<Relation> relasjoner;
-
-    public Personalressurs() {
-        this.relasjoner = new ArrayList<>();
-    }
 
     public Personalressurs(Identifikator brukernavn, Identifikator systemId, Identifikator ansattnummer, Periode ansettelsesperiode, Kontaktinformasjon kontaktinformasjon) {
         this.brukernavn = brukernavn;
@@ -38,12 +31,6 @@ public class Personalressurs implements FintModel {
         this.ansattnummer = ansattnummer;
         this.ansettelsesperiode = ansettelsesperiode;
         this.kontaktinformasjon = kontaktinformasjon;
-        this.relasjoner = new ArrayList<>();
-    }
-
-    @Override
-    public void addRelasjon(Relation relation) {
-        this.relasjoner.add(relation);
     }
 
     @JsonIgnore

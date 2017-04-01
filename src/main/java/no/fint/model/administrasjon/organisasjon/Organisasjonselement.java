@@ -3,16 +3,14 @@ package no.fint.model.administrasjon.organisasjon;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import no.fint.model.felles.*;
-import no.fint.model.relation.FintModel;
-import no.fint.model.relation.Relation;
-
-import java.util.ArrayList;
-import java.util.List;
+import no.fint.model.relation.Identifiable;
 
 @Data
+@NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-public class Organisasjonselement extends Enhet implements FintModel {
+public class Organisasjonselement extends Enhet implements Identifiable {
     public enum Relasjonsnavn {
         ORGANISASJON,
         ARBEIDSFORHOLD,
@@ -25,11 +23,6 @@ public class Organisasjonselement extends Enhet implements FintModel {
     private Identifikator organisasjonsId;
     private Identifikator organisasjonsKode;
     private Periode gyldighetsperiode;
-    private List<Relation> relasjoner;
-
-    public Organisasjonselement() {
-        this.relasjoner = new ArrayList<>();
-    }
 
     public Organisasjonselement(Kontaktinformasjon kontaktinformasjon, Adresse postadresse, Identifikator organisasjonsnummer, String organisasjonsnavn, Adresse forretningsadresse, String navn, String kortnavn, boolean aktiv, Identifikator organisasjonsId, Identifikator organisasjonsKode, Periode gyldighetsperiode) {
         super(kontaktinformasjon, postadresse, organisasjonsnummer, organisasjonsnavn, forretningsadresse);
@@ -39,12 +32,6 @@ public class Organisasjonselement extends Enhet implements FintModel {
         this.organisasjonsId = organisasjonsId;
         this.organisasjonsKode = organisasjonsKode;
         this.gyldighetsperiode = gyldighetsperiode;
-        this.relasjoner = new ArrayList<>();
-    }
-
-    @Override
-    public void addRelasjon(Relation relation) {
-        this.relasjoner.add(relation);
     }
 
     @JsonIgnore
