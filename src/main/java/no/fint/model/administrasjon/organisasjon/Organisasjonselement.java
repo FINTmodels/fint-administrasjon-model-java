@@ -1,5 +1,6 @@
 package no.fint.model.administrasjon.organisasjon;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import no.fint.model.felles.*;
@@ -44,5 +45,11 @@ public class Organisasjonselement extends Enhet implements FintModel {
     @Override
     public void addRelasjon(Relation relation) {
         this.relasjoner.add(relation);
+    }
+
+    @JsonIgnore
+    @Override
+    public String getId() {
+        return this.getOrganisasjonsId().getIdentifikatorverdi();
     }
 }

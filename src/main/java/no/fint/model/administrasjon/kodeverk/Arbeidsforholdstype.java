@@ -1,5 +1,6 @@
 package no.fint.model.administrasjon.kodeverk;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import no.fint.model.felles.Begrep;
@@ -32,5 +33,11 @@ public class Arbeidsforholdstype extends Begrep implements FintModel {
     @Override
     public void addRelasjon(Relation relation) {
         this.relasjoner.add(relation);
+    }
+
+    @JsonIgnore
+    @Override
+    public String getId() {
+        return this.getSystemId().getIdentifikatorverdi();
     }
 }
