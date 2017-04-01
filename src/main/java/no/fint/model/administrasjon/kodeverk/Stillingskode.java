@@ -14,7 +14,6 @@ import java.util.List;
 @Data
 @EqualsAndHashCode(callSuper = true)
 public class Stillingskode extends Begrep implements FintModel {
-
     public enum Relasjonsnavn {
         FORELDER
     }
@@ -22,16 +21,17 @@ public class Stillingskode extends Begrep implements FintModel {
     private List<Relation> relasjoner;
     private String ksKode;
 
+    public Stillingskode() {
+        this.relasjoner = new ArrayList<>();
+    }
+
     public Stillingskode(Identifikator systemId, String kode, String navn, Periode gyldighetsperiode, Stillingskode forelder, String ksKode) {
         super(systemId, kode, navn, gyldighetsperiode);
         this.ksKode = ksKode;
         this.relasjoner = new ArrayList<>();
     }
 
-    public Stillingskode() {
-        this.relasjoner = new ArrayList<>();
-    }
-
+    @Override
     public void addRelasjon(Relation relation) {
         this.relasjoner.add(relation);
     }

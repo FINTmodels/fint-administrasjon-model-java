@@ -27,6 +27,10 @@ public class Personalressurs implements FintModel {
     private Kontaktinformasjon kontaktinformasjon;
     private List<Relation> relasjoner;
 
+    public Personalressurs() {
+        this.relasjoner = new ArrayList<>();
+    }
+
     public Personalressurs(Identifikator brukernavn, Identifikator systemId, Identifikator ansattnummer, Periode ansettelsesperiode, Kontaktinformasjon kontaktinformasjon) {
         this.brukernavn = brukernavn;
         this.systemId = systemId;
@@ -36,10 +40,7 @@ public class Personalressurs implements FintModel {
         this.relasjoner = new ArrayList<>();
     }
 
-    public Personalressurs() {
-        this.relasjoner = new ArrayList<>();
-    }
-
+    @Override
     public void addRelasjon(Relation relation) {
         this.relasjoner.add(relation);
     }

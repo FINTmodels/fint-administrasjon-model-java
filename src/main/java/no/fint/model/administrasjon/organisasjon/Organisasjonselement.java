@@ -26,6 +26,10 @@ public class Organisasjonselement extends Enhet implements FintModel {
     private Periode gyldighetsperiode;
     private List<Relation> relasjoner;
 
+    public Organisasjonselement() {
+        this.relasjoner = new ArrayList<>();
+    }
+
     public Organisasjonselement(Kontaktinformasjon kontaktinformasjon, Adresse postadresse, Identifikator organisasjonsnummer, String organisasjonsnavn, Adresse forretningsadresse, String navn, String kortnavn, boolean aktiv, Identifikator organisasjonsId, Identifikator organisasjonsKode, Periode gyldighetsperiode) {
         super(kontaktinformasjon, postadresse, organisasjonsnummer, organisasjonsnavn, forretningsadresse);
         this.navn = navn;
@@ -37,10 +41,7 @@ public class Organisasjonselement extends Enhet implements FintModel {
         this.relasjoner = new ArrayList<>();
     }
 
-    public Organisasjonselement() {
-        this.relasjoner = new ArrayList<>();
-    }
-
+    @Override
     public void addRelasjon(Relation relation) {
         this.relasjoner.add(relation);
     }

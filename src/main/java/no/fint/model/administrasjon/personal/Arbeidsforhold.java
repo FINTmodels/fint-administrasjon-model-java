@@ -54,6 +54,7 @@ public class Arbeidsforhold implements FintModel {
         this.relasjoner = new ArrayList<>();
     }
 
+    @Override
     public void addRelasjon(Relation relation) {
         this.relasjoner.add(relation);
     }

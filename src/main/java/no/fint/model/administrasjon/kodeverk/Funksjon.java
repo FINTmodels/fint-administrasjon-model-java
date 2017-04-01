@@ -20,15 +20,16 @@ public class Funksjon extends Begrep implements FintModel {
 
     private List<Relation> relasjoner;
 
+    public Funksjon() {
+        this.relasjoner = new ArrayList<>();
+    }
+
     public Funksjon(Identifikator systemId, String kode, String navn, Periode gyldighetsperiode) {
         super(systemId, kode, navn, gyldighetsperiode);
         this.relasjoner = new ArrayList<>();
     }
 
-    public Funksjon() {
-        this.relasjoner = new ArrayList<>();
-    }
-
+    @Override
     public void addRelasjon(Relation relation) {
         this.relasjoner.add(relation);
     }

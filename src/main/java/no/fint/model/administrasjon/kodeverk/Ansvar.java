@@ -14,24 +14,23 @@ import java.util.List;
 @Data
 @EqualsAndHashCode(callSuper = true)
 public class Ansvar extends Begrep implements FintModel {
-
     public enum Relasjonsnavn {
         FORELDER
     }
 
     private List<Relation> relasjoner;
 
+    public Ansvar() {
+        this.relasjoner = new ArrayList<>();
+    }
+
     public Ansvar(Identifikator systemId, String kode, String navn, Periode gyldighetsperiode) {
         super(systemId, kode, navn, gyldighetsperiode);
         this.relasjoner = new ArrayList<>();
     }
 
-    public Ansvar() {
-        this.relasjoner = new ArrayList<>();
-    }
-
+    @Override
     public void addRelasjon(Relation relation) {
         this.relasjoner.add(relation);
     }
-
 }

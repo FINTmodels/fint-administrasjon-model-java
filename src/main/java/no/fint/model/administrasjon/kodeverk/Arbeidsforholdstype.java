@@ -20,15 +20,16 @@ public class Arbeidsforholdstype extends Begrep implements FintModel {
 
     private List<Relation> relasjoner;
 
+    public Arbeidsforholdstype() {
+        this.relasjoner = new ArrayList<>();
+    }
+
     public Arbeidsforholdstype(Identifikator systemId, String kode, String navn, Periode gyldighetsperiode) {
         super(systemId, kode, navn, gyldighetsperiode);
         this.relasjoner = new ArrayList<>();
     }
 
-    public Arbeidsforholdstype() {
-        this.relasjoner = new ArrayList<>();
-    }
-
+    @Override
     public void addRelasjon(Relation relation) {
         this.relasjoner.add(relation);
     }
