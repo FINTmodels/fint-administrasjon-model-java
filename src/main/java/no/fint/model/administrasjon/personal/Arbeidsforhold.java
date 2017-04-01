@@ -1,20 +1,17 @@
 package no.fint.model.administrasjon.personal;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 import no.fint.model.felles.Identifikator;
 import no.fint.model.felles.Kontaktinformasjon;
 import no.fint.model.felles.Periode;
 import no.fint.model.relation.FintModel;
 import no.fint.model.relation.Relation;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
 public class Arbeidsforhold implements FintModel {
     public enum Relasjonsnavn {
@@ -38,4 +35,26 @@ public class Arbeidsforhold implements FintModel {
     private Periode gyldighetsperiode;
     private Kontaktinformasjon kontaktinformasjon;
     private List<Relation> relasjoner;
+
+    public Arbeidsforhold(Identifikator systemId, String stillingsnummer, boolean aktiv, double arslonn, String stillingstittel, double ansettelsesprosent, double lonnsprosent, boolean hovedstilling, Periode gyldighetsperiode, Kontaktinformasjon kontaktinformasjon) {
+        this.systemId = systemId;
+        this.stillingsnummer = stillingsnummer;
+        this.aktiv = aktiv;
+        this.arslonn = arslonn;
+        this.stillingstittel = stillingstittel;
+        this.ansettelsesprosent = ansettelsesprosent;
+        this.lonnsprosent = lonnsprosent;
+        this.hovedstilling = hovedstilling;
+        this.gyldighetsperiode = gyldighetsperiode;
+        this.kontaktinformasjon = kontaktinformasjon;
+        this.relasjoner = new ArrayList<>();
+    }
+
+    public Arbeidsforhold() {
+        this.relasjoner = new ArrayList<>();
+    }
+
+    public void addRelasjon(Relation relation) {
+        this.relasjoner.add(relation);
+    }
 }

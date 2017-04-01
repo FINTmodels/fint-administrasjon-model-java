@@ -2,15 +2,14 @@ package no.fint.model.administrasjon.organisasjon;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 import no.fint.model.felles.*;
 import no.fint.model.relation.FintModel;
 import no.fint.model.relation.Relation;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
-@NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 public class Organisasjonselement extends Enhet implements FintModel {
     public enum Relasjonsnavn {
@@ -35,5 +34,14 @@ public class Organisasjonselement extends Enhet implements FintModel {
         this.organisasjonsId = organisasjonsId;
         this.organisasjonsKode = organisasjonsKode;
         this.gyldighetsperiode = gyldighetsperiode;
+        this.relasjoner = new ArrayList<>();
+    }
+
+    public Organisasjonselement() {
+        this.relasjoner = new ArrayList<>();
+    }
+
+    public void addRelasjon(Relation relation) {
+        this.relasjoner.add(relation);
     }
 }
