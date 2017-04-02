@@ -23,7 +23,7 @@ repositories {
 
 apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.2/dependencies.gradle'
 dependencies {
-    compile('no.fint:fint-felles-model-java:1.0.0-rc.2.17')
+    compile('no.fint:fint-felles-model-java:1.0.0-rc.2.18')
 
     compileOnly("org.projectlombok:lombok:${lombokVersion}")
 }
