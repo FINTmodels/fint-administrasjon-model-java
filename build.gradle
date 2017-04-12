@@ -11,7 +11,7 @@ targetCompatibility = 1.8
 
 jar {
     baseName = 'fint-administrasjon-model-java'
-    version = '1.0.0-rc.2.18'
+    version = '1.0.1-rc.1'
 }
 
 repositories {
@@ -24,7 +24,7 @@ repositories {
 
 apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.4/dependencies.gradle'
 dependencies {
-    compile('no.fint:fint-felles-model-java:1.0.0-rc.2.18')
+    compile('no.fint:fint-felles-model-java:1.0.1-rc.1')
 
     compileOnly("org.projectlombok:lombok:${lombokVersion}")
 }
