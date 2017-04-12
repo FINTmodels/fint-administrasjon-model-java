@@ -15,12 +15,12 @@ import no.fint.model.relation.Identifiable;
 public class Arbeidsforhold implements Identifiable {
     public enum Relasjonsnavn {
         PERSONALRESSURS,
-        ORGANISASJON,
+        ARBEIDSSTED,
         ARBEIDSFORHOLDSTYPE,
         STILLINGSKODE,
         ANSVAR,
         FUNKSJON,
-        TIMEPRUKE
+        TIMEPERUKE
     }
 
     private Identifikator systemId;

@@ -12,7 +12,8 @@ import no.fint.model.relation.Identifiable;
 @EqualsAndHashCode(callSuper = true)
 public class Organisasjonselement extends Enhet implements Identifiable {
     public enum Relasjonsnavn {
-        ORGANISASJON,
+        OVERORDNET,
+        UNDERORDNET,
         ARBEIDSFORHOLD,
         LEDER
     }
