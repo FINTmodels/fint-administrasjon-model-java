@@ -17,11 +17,8 @@ public class Stillingskode extends Begrep implements Identifiable {
         FORELDER
     }
 
-    private String ksKode;
-
-    public Stillingskode(Identifikator systemId, String kode, String navn, Periode gyldighetsperiode, Stillingskode forelder, String ksKode) {
+    public Stillingskode(Identifikator systemId, String kode, String navn, Periode gyldighetsperiode) {
         super(systemId, kode, navn, gyldighetsperiode);
-        this.ksKode = ksKode;
     }
 
     @JsonIgnore

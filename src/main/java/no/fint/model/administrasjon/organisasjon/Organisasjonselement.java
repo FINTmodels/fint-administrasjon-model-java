@@ -14,7 +14,6 @@ public class Organisasjonselement extends Enhet implements Identifiable {
     public enum Relasjonsnavn {
         OVERORDNET,
         UNDERORDNET,
-        ARBEIDSFORHOLD,
         LEDER
     }
 

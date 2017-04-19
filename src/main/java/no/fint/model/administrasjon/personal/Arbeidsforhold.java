@@ -25,7 +25,6 @@ public class Arbeidsforhold implements Identifiable {
 
     private Identifikator systemId;
     private String stillingsnummer;
-    private boolean aktiv;
     private double arslonn;
     private String stillingstittel;
     private double ansettelsesprosent;
@@ -34,10 +33,9 @@ public class Arbeidsforhold implements Identifiable {
     private Periode gyldighetsperiode;
     private Kontaktinformasjon kontaktinformasjon;
 
-    public Arbeidsforhold(Identifikator systemId, String stillingsnummer, boolean aktiv, double arslonn, String stillingstittel, double ansettelsesprosent, double lonnsprosent, boolean hovedstilling, Periode gyldighetsperiode, Kontaktinformasjon kontaktinformasjon) {
+    public Arbeidsforhold(Identifikator systemId, String stillingsnummer, double arslonn, String stillingstittel, double ansettelsesprosent, double lonnsprosent, boolean hovedstilling, Periode gyldighetsperiode, Kontaktinformasjon kontaktinformasjon) {
         this.systemId = systemId;
         this.stillingsnummer = stillingsnummer;
-        this.aktiv = aktiv;
         this.arslonn = arslonn;
         this.stillingstittel = stillingstittel;
         this.ansettelsesprosent = ansettelsesprosent;
