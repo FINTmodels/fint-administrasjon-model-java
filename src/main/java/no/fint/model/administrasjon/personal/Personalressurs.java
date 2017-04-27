@@ -15,8 +15,8 @@ import no.fint.model.relation.Identifiable;
 public class Personalressurs implements Identifiable {
     public enum Relasjonsnavn {
         PERSON,
-        ARBEIDSFORHOLD,
-        PERSONALRESSURSKATEGORI
+        PERSONALRESSURSKATEGORI,
+        ARBEIDSFORHOLD
     }
 
     private Identifikator brukernavn;

@@ -12,7 +12,7 @@ import no.fint.model.relation.Identifiable;
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-public class Funksjon extends Begrep implements Identifiable {
+public class    Funksjon extends Begrep implements Identifiable {
     public enum Relasjonsnavn {
         FORELDER
     }

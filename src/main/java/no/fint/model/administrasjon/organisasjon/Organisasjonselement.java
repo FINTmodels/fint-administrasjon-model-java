@@ -19,16 +19,14 @@ public class Organisasjonselement extends Enhet implements Identifiable {
 
     private String navn;
     private String kortnavn;
-    private boolean aktiv;
     private Identifikator organisasjonsId;
     private Identifikator organisasjonsKode;
     private Periode gyldighetsperiode;
 
-    public Organisasjonselement(Kontaktinformasjon kontaktinformasjon, Adresse postadresse, Identifikator organisasjonsnummer, String organisasjonsnavn, Adresse forretningsadresse, String navn, String kortnavn, boolean aktiv, Identifikator organisasjonsId, Identifikator organisasjonsKode, Periode gyldighetsperiode) {
+    public Organisasjonselement(Kontaktinformasjon kontaktinformasjon, Adresse postadresse, Identifikator organisasjonsnummer, String organisasjonsnavn, Adresse forretningsadresse, String navn, String kortnavn, Identifikator organisasjonsId, Identifikator organisasjonsKode, Periode gyldighetsperiode) {
         super(kontaktinformasjon, postadresse, organisasjonsnummer, organisasjonsnavn, forretningsadresse);
         this.navn = navn;
         this.kortnavn = kortnavn;
-        this.aktiv = aktiv;
         this.organisasjonsId = organisasjonsId;
         this.organisasjonsKode = organisasjonsKode;
         this.gyldighetsperiode = gyldighetsperiode;

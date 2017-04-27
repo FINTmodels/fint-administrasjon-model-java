@@ -5,7 +5,6 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import no.fint.model.felles.Identifikator;
-import no.fint.model.felles.Kontaktinformasjon;
 import no.fint.model.felles.Periode;
 import no.fint.model.relation.Identifiable;
 
@@ -14,26 +13,25 @@ import no.fint.model.relation.Identifiable;
 @EqualsAndHashCode(callSuper = false)
 public class Arbeidsforhold implements Identifiable {
     public enum Relasjonsnavn {
-        PERSONALRESSURS,
-        ARBEIDSSTED,
-        ARBEIDSFORHOLDSTYPE,
-        STILLINGSKODE,
         ANSVAR,
+        ARBEIDSFORHOLDSTYPE,
         FUNKSJON,
-        TIMEPERUKE
+        STILLINGSKODE,
+        TIMEPERUKE,
+        ARBEIDSSTED,
+        PERSONALRESSURS
     }
 
     private Identifikator systemId;
     private String stillingsnummer;
+    private Periode gyldighetsperiode;
     private double arslonn;
     private String stillingstittel;
     private double ansettelsesprosent;
     private double lonnsprosent;
     private boolean hovedstilling;
-    private Periode gyldighetsperiode;
-    private Kontaktinformasjon kontaktinformasjon;
 
-    public Arbeidsforhold(Identifikator systemId, String stillingsnummer, double arslonn, String stillingstittel, double ansettelsesprosent, double lonnsprosent, boolean hovedstilling, Periode gyldighetsperiode, Kontaktinformasjon kontaktinformasjon) {
+    public Arbeidsforhold(Identifikator systemId, String stillingsnummer, double arslonn, String stillingstittel, double ansettelsesprosent, double lonnsprosent, boolean hovedstilling, Periode gyldighetsperiode) {
         this.systemId = systemId;
         this.stillingsnummer = stillingsnummer;
         this.arslonn = arslonn;
@@ -42,7 +40,6 @@ public class Arbeidsforhold implements Identifiable {
         this.lonnsprosent = lonnsprosent;
         this.hovedstilling = hovedstilling;
         this.gyldighetsperiode = gyldighetsperiode;
-        this.kontaktinformasjon = kontaktinformasjon;
     }
 
     @JsonIgnore
