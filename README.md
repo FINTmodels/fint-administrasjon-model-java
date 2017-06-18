@@ -1,6 +1,6 @@
 # FINT informasjonsmodeller for Java
 
-*Siste versjon: 1.0.1*
+*Siste versjon: 1.0.2*
 
 [ ![Download](https://api.bintray.com/packages/fint/maven/fint-administrasjon-model-java/images/download.svg) ](https://bintray.com/fint/maven/fint-administrasjon-model-java/_latestVersion) 
 
