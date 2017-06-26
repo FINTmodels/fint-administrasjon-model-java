@@ -31,7 +31,8 @@ public class Personalressurs implements Identifiable {
     public enum Relasjonsnavn {
         PARORENDE,
         PERSONALRESSURSKATEGORI,
-        ARBEIDSFORHOLD
+        ARBEIDSFORHOLD,
+        PERSON
     }
 }
 
