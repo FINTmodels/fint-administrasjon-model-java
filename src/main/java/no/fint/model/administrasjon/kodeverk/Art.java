@@ -1,17 +1,12 @@
 package no.fint.model.administrasjon.kodeverk;
 
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
-import no.fint.model.felles.Begrep;
-import no.fint.model.felles.Identifikator;
-import no.fint.model.felles.Periode;
+import no.fint.model.felles.basisklasser.Begrep;
 
 @Data
-@NoArgsConstructor
-@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode(callSuper = false)
 public class Art extends Begrep {
-    public Art(Identifikator systemId, String kode, String navn, Periode gyldighetsperiode) {
-        super(systemId, kode, navn, gyldighetsperiode);
-    }
 }
+

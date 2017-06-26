@@ -7,6 +7,9 @@ import no.fint.model.felles.basisklasser.Begrep;
 
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class Prosjekt extends Begrep {
+public class Arbeidforholdstype extends Begrep {
+    public enum Relasjonsnavn {
+        FORELDER
+    }
 }
 
