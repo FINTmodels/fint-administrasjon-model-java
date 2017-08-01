@@ -4,8 +4,10 @@ import java.util.Arrays;
 import java.util.List;
 
 public enum OrganisasjonActions {
+
+    GET_ORGANISASJONSELEMENT,
     GET_ALL_ORGANISASJONSELEMENT,
-    GET_ORGANISASJONSELEMENT;
+    UPDATE_ORGANISASJONSELEMENT;
 
     /**
      * Gets a list of all enums as string
@@ -17,4 +19,6 @@ public enum OrganisasjonActions {
                 Arrays.stream(OrganisasjonActions.class.getEnumConstants()).map(Enum::name).toArray(String[]::new)
         );
     }
+
 }
+
