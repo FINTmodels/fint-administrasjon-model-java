@@ -4,10 +4,12 @@ import java.util.Arrays;
 import java.util.List;
 
 public enum OrganisasjonActions {
+	
+	GET_ORGANISASJONSELEMENT,
+	GET_ALL_ORGANISASJONSELEMENT,
+	UPDATE_ORGANISASJONSELEMENT
+	;
 
-    GET_ORGANISASJONSELEMENT,
-    GET_ALL_ORGANISASJONSELEMENT,
-    UPDATE_ORGANISASJONSELEMENT;
 
     /**
      * Gets a list of all enums as string
