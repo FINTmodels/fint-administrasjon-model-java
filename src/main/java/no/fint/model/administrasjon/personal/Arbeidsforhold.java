@@ -1,3 +1,5 @@
+// Built from tag v1.1.0-rc2
+
 package no.fint.model.administrasjon.personal;
 
 import lombok.AllArgsConstructor;
@@ -19,17 +21,18 @@ public class Arbeidsforhold {
         STILLINGSKODE,
         TIMERPERUKE,
         ARBEIDSSTED,
-        UNDERVISNINGSFORHOLD,
-        PERSONALRESSURS
+        PERSONALRESSURS,
+        UNDERVISNINGSFORHOLD
     }
 
-    private Identifikator systemId;
-    private String stillingsnummer;
+    private long ansettelsesprosent;
     private Periode gyldighetsperiode;
-    private double arslonn;
-    private String stillingstittel;
-    private double ansettelsesprosent;
-    private double lonnsprosent;
     private boolean hovedstilling;
+    private long lonnsprosent;
+    private String stillingsnummer;
+    private String stillingstittel;
+    private Identifikator systemId;
+    private long tilstedeprosent;
+    private long arslonn;
 }
 

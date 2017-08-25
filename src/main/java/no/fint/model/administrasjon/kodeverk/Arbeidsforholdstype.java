@@ -8,6 +8,9 @@ import no.fint.model.felles.basisklasser.Begrep;
 
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class Personalressurskategori extends Begrep {
+public class Arbeidsforholdstype extends Begrep {
+    public enum Relasjonsnavn {
+        FORELDER
+    }
 }
 
