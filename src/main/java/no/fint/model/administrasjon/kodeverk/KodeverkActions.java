@@ -1,4 +1,4 @@
-// Built from tag v1.1.0-rc2
+// Built from tag master
 
 package no.fint.model.administrasjon.kodeverk;
 
@@ -19,6 +19,9 @@ public enum KodeverkActions {
     GET_FUNKSJON,
     GET_ALL_FUNKSJON,
     UPDATE_FUNKSJON,
+    GET_LONNSART,
+    GET_ALL_LONNSART,
+    UPDATE_LONNSART,
     GET_PERSONALRESSURSKATEGORI,
     GET_ALL_PERSONALRESSURSKATEGORI,
     UPDATE_PERSONALRESSURSKATEGORI,

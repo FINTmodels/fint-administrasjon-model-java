@@ -8,9 +8,6 @@ import no.fint.model.felles.basisklasser.Begrep;
 
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class Funksjon extends Begrep {
-    public enum Relasjonsnavn {
-        FORELDER
-    }
+public class Lonnsart extends Begrep {
 }
 
