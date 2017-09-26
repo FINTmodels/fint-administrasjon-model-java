@@ -8,6 +8,6 @@ import no.fint.model.felles.basisklasser.Begrep;
 
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class Lonnsart extends Begrep {
+public class Uketimetall extends Begrep {
 }
 
