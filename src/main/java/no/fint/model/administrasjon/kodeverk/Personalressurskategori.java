@@ -4,9 +4,11 @@ package no.fint.model.administrasjon.kodeverk;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.ToString;
 import no.fint.model.felles.basisklasser.Begrep;
 
 @Data
+@ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
 public class Personalressurskategori extends Begrep {
 }

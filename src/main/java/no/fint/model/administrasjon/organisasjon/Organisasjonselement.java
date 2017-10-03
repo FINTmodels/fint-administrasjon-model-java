@@ -4,11 +4,13 @@ package no.fint.model.administrasjon.organisasjon;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.ToString;
 import no.fint.model.felles.basisklasser.Enhet;
 import no.fint.model.felles.kompleksedatatyper.Identifikator;
 import no.fint.model.felles.kompleksedatatyper.Periode;
 
 @Data
+@ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
 public class Organisasjonselement extends Enhet {
     private Periode gyldighetsperiode;
