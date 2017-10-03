@@ -7,7 +7,7 @@ import lombok.EqualsAndHashCode;
 import no.fint.model.felles.basisklasser.Begrep;
 
 @Data
-@EqualsAndHashCode(callSuper = false)
+@EqualsAndHashCode(callSuper = true)
 public class Funksjon extends Begrep {
     public enum Relasjonsnavn {
         FORELDER

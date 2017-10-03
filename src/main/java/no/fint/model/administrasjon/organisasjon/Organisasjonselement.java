@@ -9,7 +9,7 @@ import no.fint.model.felles.kompleksedatatyper.Identifikator;
 import no.fint.model.felles.kompleksedatatyper.Periode;
 
 @Data
-@EqualsAndHashCode(callSuper = false)
+@EqualsAndHashCode(callSuper = true)
 public class Organisasjonselement extends Enhet {
     private Periode gyldighetsperiode;
     private String kortnavn;

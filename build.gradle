@@ -11,7 +11,7 @@ sourceCompatibility = 1.8
 
 jar {
     baseName = 'fint-administrasjon-model-java'
-    version = '2.0.1'
+    version = '2.0.2'
 }
 
 repositories {
