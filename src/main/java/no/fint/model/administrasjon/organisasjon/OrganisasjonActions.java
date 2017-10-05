@@ -1,4 +1,4 @@
-// Built from tag v2.0.0
+// Built from tag v2.0.10
 
 package no.fint.model.administrasjon.organisasjon;
 
@@ -6,10 +6,11 @@ import java.util.Arrays;
 import java.util.List;
 
 public enum OrganisasjonActions {
-
-    GET_ORGANISASJONSELEMENT,
-    GET_ALL_ORGANISASJONSELEMENT,
-    UPDATE_ORGANISASJONSELEMENT;
+	
+	GET_ORGANISASJONSELEMENT,
+	GET_ALL_ORGANISASJONSELEMENT,
+	UPDATE_ORGANISASJONSELEMENT
+	;
 
 
     /**

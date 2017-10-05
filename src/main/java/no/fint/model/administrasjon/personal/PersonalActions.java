@@ -1,4 +1,4 @@
-// Built from tag v2.0.0
+// Built from tag v2.0.10
 
 package no.fint.model.administrasjon.personal;
 
@@ -6,13 +6,14 @@ import java.util.Arrays;
 import java.util.List;
 
 public enum PersonalActions {
-
-    GET_PERSONALRESSURS,
-    GET_ALL_PERSONALRESSURS,
-    UPDATE_PERSONALRESSURS,
-    GET_ARBEIDSFORHOLD,
-    GET_ALL_ARBEIDSFORHOLD,
-    UPDATE_ARBEIDSFORHOLD;
+	
+	GET_PERSONALRESSURS,
+	GET_ALL_PERSONALRESSURS,
+	UPDATE_PERSONALRESSURS,
+	GET_ARBEIDSFORHOLD,
+	GET_ALL_ARBEIDSFORHOLD,
+	UPDATE_ARBEIDSFORHOLD
+	;
 
 
     /**
