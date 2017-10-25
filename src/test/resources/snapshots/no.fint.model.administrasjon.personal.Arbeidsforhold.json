@@ -1,22 +1,22 @@
 {
-  "ansettelsesprosent" : 1827935699948457675,
+  "ansettelsesprosent" : -1906131621556613048,
   "gyldighetsperiode" : {
-    "beskrivelse" : "TRMQ",
-    "slutt" : 1324842890418,
-    "start" : 1328292204377
+    "beskrivelse" : "aghcVneyVXSvGTctzktScOppvkdSk",
+    "slutt" : 1828234453576,
+    "start" : 1508784343703
   },
-  "hovedstilling" : false,
-  "lonnsprosent" : 1928749209001068369,
-  "stillingsnummer" : "EbjZIAhKboUnreNyfJO",
-  "stillingstittel" : "bzqu",
+  "hovedstilling" : true,
+  "lonnsprosent" : 7204011192937628577,
+  "stillingsnummer" : "wIGJhosvDamLaqXZPiTEQQ",
+  "stillingstittel" : "dDfHRUdPCexqn",
   "systemId" : {
     "gyldighetsperiode" : {
-      "beskrivelse" : "nuNMwjeooxhcPydyQHCcZLLcq",
-      "slutt" : 1713863302858,
-      "start" : 1355524540187
+      "beskrivelse" : "dhVSHyijdfgHQXVZjMYouArnVvzrXMD",
+      "slutt" : 1875659474096,
+      "start" : 1812859932965
     },
-    "identifikatorverdi" : "puhcHopGRUBJzsAutfKxNkI"
+    "identifikatorverdi" : "XkJAwaLwrpvKvfKZDfvDVlureUqkaEVZ"
   },
-  "tilstedeprosent" : -5248868742941411426,
-  "arslonn" : 2724671723421068227
+  "tilstedeprosent" : -520035661245287513,
+  "arslonn" : -2355484223557195900
 }

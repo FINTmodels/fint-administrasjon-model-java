@@ -8,11 +8,11 @@ class ModelSpec extends Specification {
     private JsonSnapshots jsonSnapshots
 
     void setup() {
-        jsonSnapshots = new JsonSnapshots('no.fint.model.administrasjon')
+        jsonSnapshots = new JsonSnapshots(this)
     }
 
-    @Requires({ Boolean.valueOf(sys['UPDATE_SNAPSHOT']) })
-    def "Create FINT model snapshots"() {
+    @Requires({ Boolean.valueOf(sys['CREATE_SNAPSHOTS']) })
+    def "Create snapshots"() {
         expect:
         jsonSnapshots.create()
     }
