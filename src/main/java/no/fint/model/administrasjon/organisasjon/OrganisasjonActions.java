@@ -1,4 +1,4 @@
-// Built from tag v2.0.10
+// Built from tag v2.2.0
 
 package no.fint.model.administrasjon.organisasjon;
 
