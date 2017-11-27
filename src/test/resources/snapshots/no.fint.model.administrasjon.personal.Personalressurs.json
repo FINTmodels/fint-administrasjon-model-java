@@ -1,38 +1,38 @@
 {
   "ansattnummer" : {
     "gyldighetsperiode" : {
-      "beskrivelse" : "HSxzXyAWqiHTErPekz",
-      "slutt" : 1608499743854,
-      "start" : 1283944859466
+      "beskrivelse" : "mmR",
+      "slutt" : 1305219201047,
+      "start" : 1596866578029
     },
-    "identifikatorverdi" : "l"
+    "identifikatorverdi" : "kHkJrlA"
   },
   "ansettelsesperiode" : {
-    "beskrivelse" : "kV",
-    "slutt" : 1578027886067,
-    "start" : 1673000953502
+    "beskrivelse" : "brtVqjwPUsMJSZWrA",
+    "slutt" : 1780238051238,
+    "start" : 1674856836573
   },
   "brukernavn" : {
     "gyldighetsperiode" : {
-      "beskrivelse" : "NxxLAEbJymqieJFBaASxvgTqDaQSlvpJ",
-      "slutt" : 1891412747817,
-      "start" : 1827013049850
+      "beskrivelse" : "WXeewtgRuchhJFhgyJBUS",
+      "slutt" : 1794643169901,
+      "start" : 1280536006286
     },
-    "identifikatorverdi" : "xkngjVvsuOzLqaOAf"
+    "identifikatorverdi" : "VIrnhSMNuyFZYSoNhZXyeiNQwwq"
   },
   "kontaktinformasjon" : {
-    "epostadresse" : "sRFpv",
-    "mobiltelefonnummer" : "TSMBJtNsKAwxiTaTkvTZG",
-    "nettsted" : "kswJIhAqNhsCFlA",
-    "sip" : "LclgrLLoaoYNezHynoiLJCpHpofTsHnh",
-    "telefonnummer" : "DRzHMhMZSznDkDUOZupPglKC"
+    "epostadresse" : "zeRfDJRkRIDHZb",
+    "mobiltelefonnummer" : "PbgUehLfLCfTNVZUfoizM",
+    "nettsted" : "H",
+    "sip" : "HsWpuxARUBdVUnhNqtcumAehEbF",
+    "telefonnummer" : "vjceAGbvOeviowuDfktgEiVybt"
   },
   "systemId" : {
     "gyldighetsperiode" : {
-      "beskrivelse" : "HXbdcagmQCUplKFXPUhlwnaRcMsYt",
-      "slutt" : 1859937887540,
-      "start" : 1367695356647
+      "beskrivelse" : "k",
+      "slutt" : 1795386010491,
+      "start" : 1750617169824
     },
-    "identifikatorverdi" : "GAMfbhxsZHPTZnWvnaXYvvztA"
+    "identifikatorverdi" : "ShxQhCjrESIUgmGWFJjkDScZGqPV"
   }
 }

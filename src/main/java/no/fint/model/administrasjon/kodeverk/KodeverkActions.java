@@ -1,4 +1,4 @@
-// Built from tag v2.2.0
+// Built from tag v2.2.10
 
 package no.fint.model.administrasjon.kodeverk;
 

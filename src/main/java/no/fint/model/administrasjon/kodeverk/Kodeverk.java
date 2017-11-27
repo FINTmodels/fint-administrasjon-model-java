@@ -10,15 +10,12 @@ import lombok.NonNull;
 import java.util.List;
 import no.fint.model.*;
 
-import no.fint.model.administrasjon.kodeverk.Kodeverk;
+import no.fint.model.felles.basisklasser.Begrep;
 
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper=true)
 @ToString(callSuper=true)
-public class Stillingskode extends Kodeverk implements FintMainObject {
-    public enum Relasjonsnavn {
-            FORELDER
-    }
-
+public abstract class Kodeverk extends Begrep implements FintAbstractObject {
+    private Boolean passiv;
 }
