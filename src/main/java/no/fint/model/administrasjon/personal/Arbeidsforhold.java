@@ -1,4 +1,4 @@
-// Built from tag v2.2.10
+// Built from tag v2.2.20
 
 package no.fint.model.administrasjon.personal;
 

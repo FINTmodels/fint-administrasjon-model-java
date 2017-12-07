@@ -1,4 +1,4 @@
-// Built from tag v2.2.10
+// Built from tag v2.2.20
 
 package no.fint.model.administrasjon.personal;
 
@@ -29,7 +29,6 @@ public class Personalressurs implements FintMainObject {
     private Identifikator ansattnummer;
     @NonNull
     private Periode ansettelsesperiode;
-    @NonNull
     private Identifikator brukernavn;
     private Kontaktinformasjon kontaktinformasjon;
     private Identifikator systemId;
