@@ -1,18 +1,17 @@
 {
   "gyldighetsperiode" : {
-    "beskrivelse" : "Xv",
-    "slutt" : 1283693143818,
-    "start" : 1763494005899
+    "beskrivelse" : "iDucEwIrgKgA",
+    "slutt" : 1491997816345,
+    "start" : 1816083638705
   },
-  "kode" : "QWKmNVcTmnxfiEBqpTBQp",
-  "navn" : "VqPTevlZkXIjhbRsIKJuKyCOuV",
+  "kode" : "GzbJr",
+  "navn" : "mYFomzMKAiamUTqxMFQgMlgxWexts",
   "systemId" : {
     "gyldighetsperiode" : {
-      "beskrivelse" : "duYCtWWpWGhtNnnDoJJF",
-      "slutt" : 1873143646418,
-      "start" : 1361896113443
+      "beskrivelse" : "dTLtXRbUIMUxgBlyEKuOUVTqikVkkAN",
+      "slutt" : 1482608657793,
+      "start" : 1845372203670
     },
-    "identifikatorverdi" : "oQxHWaWezAEPlOEGsOMTepnHgJkEZfx"
-  },
-  "passiv" : false
+    "identifikatorverdi" : "RHVvOCUHoCmI"
+  }
 }
