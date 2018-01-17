@@ -1,0 +1,17 @@
+{
+  "periode" : {
+    "beskrivelse" : "jYNQFmWRQAFlkSsrvlLqXWMhHdygsU",
+    "slutt" : 1849422201527,
+    "start" : 1622582045285
+  },
+  "prosent" : -1286875184015766111,
+  "status" : "OgkSxQQYXDCHuKcAiZAe",
+  "systemId" : {
+    "gyldighetsperiode" : {
+      "beskrivelse" : "ImzMLuyTqBIKJjkzKsa",
+      "slutt" : 1628557258050,
+      "start" : 1641353010346
+    },
+    "identifikatorverdi" : "P"
+  }
+}

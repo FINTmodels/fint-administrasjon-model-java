@@ -1,0 +1,18 @@
+{
+  "anvist" : 1766171796379,
+  "attestert" : 1448841417230,
+  "gyldighetsperiode" : {
+    "beskrivelse" : "XpDgABYNwuFpbAFOlglHsjmviA",
+    "slutt" : 1768253515611,
+    "start" : 1514038766764
+  },
+  "kontert" : 1625187228218,
+  "systemId" : {
+    "gyldighetsperiode" : {
+      "beskrivelse" : "rYuTHZaXgqrhSMhnAlO",
+      "slutt" : 1574591015655,
+      "start" : 1278326674184
+    },
+    "identifikatorverdi" : "LshSYMJsvQ"
+  }
+}

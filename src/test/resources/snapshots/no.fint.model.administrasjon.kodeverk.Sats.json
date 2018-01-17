@@ -1,0 +1,20 @@
+{
+  "gyldighetsperiode" : {
+    "beskrivelse" : "mHYmvgGXaWTbjMdblnOFWIuSYzgLd",
+    "slutt" : 1412404917312,
+    "start" : 1538500538115
+  },
+  "kode" : "rXKQNNIHXrLyMMu",
+  "navn" : "KEURzHdHTnxZEWkShlhWyofUrjdnySH",
+  "systemId" : {
+    "gyldighetsperiode" : {
+      "beskrivelse" : "NxBVjWeLJvNnYlSrp",
+      "slutt" : 1588707148181,
+      "start" : 1605054162608
+    },
+    "identifikatorverdi" : "dKGoLgae"
+  },
+  "belop" : 4387119967798687992,
+  "enhet" : "zIgKrtOa",
+  "grenseverdi" : 8072529609709624044
+}

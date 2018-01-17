@@ -1,4 +1,4 @@
-// Built from tag v2.2.20
+// Built from tag v2.4.0-rc-2
 
 package no.fint.model.administrasjon.kodeverk;
 
@@ -10,13 +10,13 @@ import lombok.NonNull;
 import java.util.List;
 import no.fint.model.*;
 
-import no.fint.model.administrasjon.kodeverk.Kodeverk;
+import no.fint.model.felles.basisklasser.Begrep;
 
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper=true)
 @ToString(callSuper=true)
-public class Arbeidsforholdstype extends Kodeverk implements FintMainObject {
+public class Arbeidsforholdstype extends Begrep implements FintMainObject {
     public enum Relasjonsnavn {
             FORELDER
     }

@@ -1,0 +1,18 @@
+{
+  "gyldighetsperiode" : {
+    "beskrivelse" : "STbZRwUKlJyyQ",
+    "slutt" : 1502441074111,
+    "start" : 1298288809228
+  },
+  "kode" : "dBYoeOLozLJitTf",
+  "navn" : "rg",
+  "systemId" : {
+    "gyldighetsperiode" : {
+      "beskrivelse" : "MsoruNeVXhUKix",
+      "slutt" : 1340982259415,
+      "start" : 1801390867042
+    },
+    "identifikatorverdi" : "oYyZ"
+  },
+  "overfores" : false
+}
