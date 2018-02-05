@@ -1,4 +1,4 @@
-// Built from tag v2.4.0-rc-2
+// Built from tag v2.4.0-rc-4
 
 package no.fint.model.administrasjon.kompleksedatatyper;
 
@@ -10,11 +10,13 @@ import lombok.NonNull;
 import java.util.List;
 import no.fint.model.*;
 
+import no.fint.model.felles.kompleksedatatyper.Periode;
+
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode
 @ToString
-public class Tillegg implements FintComplexDatatypeObject {
+public class Variabelttillegg implements FintComplexDatatypeObject {
     public enum Relasjonsnavn {
             LONNSART,
             KONTOSTRENG
@@ -26,5 +28,5 @@ public class Tillegg implements FintComplexDatatypeObject {
     @NonNull
     private String beskrivelse;
     @NonNull
-    private Long grunnlag;
+    private Periode periode;
 }

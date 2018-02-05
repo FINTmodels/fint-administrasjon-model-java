@@ -1,4 +1,4 @@
-// Built from tag v2.4.0-rc-2
+// Built from tag v2.4.0-rc-4
 
 package no.fint.model.administrasjon.personal;
 
@@ -18,7 +18,7 @@ import no.fint.model.administrasjon.personal.Lonn;
 @ToString(callSuper=true)
 public class Variabellonn extends Lonn implements FintMainObject {
     public enum Relasjonsnavn {
-            TILLEGG,
+            VARIABELTTILLEGG,
             ANVISER,
             KONTERER,
             ATTESTANT,

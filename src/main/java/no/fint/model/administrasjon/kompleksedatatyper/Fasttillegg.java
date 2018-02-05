@@ -1,6 +1,6 @@
 // Built from tag v2.4.0-rc-4
 
-package no.fint.model.administrasjon.fullmakt;
+package no.fint.model.administrasjon.kompleksedatatyper;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,19 +10,18 @@ import lombok.NonNull;
 import java.util.List;
 import no.fint.model.*;
 
-import no.fint.model.felles.kompleksedatatyper.Identifikator;
-
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode
 @ToString
-public class Rolle implements FintMainObject {
+public class Fasttillegg implements FintComplexDatatypeObject {
     public enum Relasjonsnavn {
-            FULLMAKT
+            LONNSART,
+            KONTOSTRENG
     }
 
     @NonNull
-    private String beskrivelse;
+    private Long belop;
     @NonNull
-    private Identifikator navn;
+    private String beskrivelse;
 }

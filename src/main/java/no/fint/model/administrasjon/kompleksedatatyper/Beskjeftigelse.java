@@ -1,4 +1,4 @@
-// Built from tag v2.4.0-rc-2
+// Built from tag v2.4.0-rc-4
 
 package no.fint.model.administrasjon.kompleksedatatyper;
 
@@ -24,5 +24,4 @@ public class Beskjeftigelse implements FintComplexDatatypeObject {
     private String beskrivelse;
     @NonNull
     private Long prosent;
-    private Long tilleggsbelop;
 }

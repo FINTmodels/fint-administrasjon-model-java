@@ -1,4 +1,4 @@
-// Built from tag v2.4.0-rc-2
+// Built from tag v2.4.0-rc-4
 
 package no.fint.model.administrasjon.personal;
 
@@ -10,9 +10,6 @@ public enum PersonalActions {
 	GET_FASTLONN,
 	GET_ALL_FASTLONN,
 	UPDATE_FASTLONN,
-	GET_FRAVAR,
-	GET_ALL_FRAVAR,
-	UPDATE_FRAVAR,
 	GET_VARIABELLONN,
 	GET_ALL_VARIABELLONN,
 	UPDATE_VARIABELLONN,

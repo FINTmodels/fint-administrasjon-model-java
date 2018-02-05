@@ -1,4 +1,4 @@
-// Built from tag v2.4.0-rc-2
+// Built from tag v2.4.0-rc-4
 
 package no.fint.model.administrasjon.personal;
 
@@ -21,9 +21,9 @@ import no.fint.model.felles.kompleksedatatyper.Identifikator;
 public abstract class Lonn implements FintAbstractObject {
     private Date anvist;
     private Date attestert;
-    @NonNull
-    private Periode gyldighetsperiode;
     private Date kontert;
+    @NonNull
+    private Periode periode;
     @NonNull
     private Identifikator systemId;
 }

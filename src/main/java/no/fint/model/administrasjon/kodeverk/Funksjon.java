@@ -1,4 +1,4 @@
-// Built from tag v2.4.0-rc-2
+// Built from tag v2.4.0-rc-4
 
 package no.fint.model.administrasjon.kodeverk;
 
@@ -18,7 +18,8 @@ import no.fint.model.administrasjon.kodeverk.Kontodimensjon;
 @ToString(callSuper=true)
 public class Funksjon extends Kontodimensjon implements FintMainObject {
     public enum Relasjonsnavn {
-            FORELDER,
+            OVERORDNET,
+            UNDERORDNET,
             FULLMAKT
     }
 
