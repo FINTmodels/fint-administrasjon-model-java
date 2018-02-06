@@ -1,4 +1,4 @@
-// Built from tag v2.4.0-rc-4
+// Built from tag v2.4.0
 
 package no.fint.model.administrasjon.personal;
 
@@ -10,6 +10,7 @@ import lombok.NonNull;
 import java.util.List;
 import no.fint.model.*;
 
+import no.fint.model.administrasjon.kompleksedatatyper.Variabelttillegg;
 import no.fint.model.administrasjon.personal.Lonn;
 
 @Data
@@ -18,11 +19,12 @@ import no.fint.model.administrasjon.personal.Lonn;
 @ToString(callSuper=true)
 public class Variabellonn extends Lonn implements FintMainObject {
     public enum Relasjonsnavn {
-            VARIABELTTILLEGG,
             ANVISER,
             KONTERER,
             ATTESTANT,
             ARBEIDSFORHOLD
     }
 
+    @NonNull
+    private List<Variabelttillegg> variabelttillegg;
 }
