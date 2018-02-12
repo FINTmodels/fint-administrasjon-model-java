@@ -1,6 +1,6 @@
 // Built from tag v2.6.0-beta-1
 
-package no.fint.model.administrasjon.kodeverk;
+package no.fint.model.administrasjon.fravar;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,5 +16,6 @@ import no.fint.model.felles.basisklasser.Begrep;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper=true)
 @ToString(callSuper=true)
-public abstract class Kontodimensjon extends Begrep implements FintAbstractObject {
+public class Fravarstype extends Begrep implements FintMainObject {
+    private Boolean overfores;
 }

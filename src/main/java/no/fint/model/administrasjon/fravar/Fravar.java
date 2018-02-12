@@ -1,6 +1,6 @@
 // Built from tag v2.6.0-beta-1
 
-package no.fint.model.administrasjon.personal;
+package no.fint.model.administrasjon.fravar;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,7 +10,6 @@ import lombok.NonNull;
 import java.util.List;
 import no.fint.model.*;
 
-import java.util.Date;
 import no.fint.model.felles.kompleksedatatyper.Periode;
 import no.fint.model.felles.kompleksedatatyper.Identifikator;
 
@@ -18,12 +17,19 @@ import no.fint.model.felles.kompleksedatatyper.Identifikator;
 @NoArgsConstructor
 @EqualsAndHashCode
 @ToString
-public abstract class Lonn implements FintAbstractObject {
-    private Date anvist;
-    private Date attestert;
-    private Date kontert;
+public class Fravar implements FintMainObject {
+    public enum Relasjonsnavn {
+            FRAVARSTYPE,
+            FRAVARSGRUNN,
+            ARBEIDSFORHOLD,
+            FORTSETTELSE,
+            FORTSETTER
+    }
+
     @NonNull
     private Periode periode;
+    @NonNull
+    private Long prosent;
     @NonNull
     private Identifikator systemId;
 }

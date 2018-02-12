@@ -1,4 +1,4 @@
-// Built from tag v2.4.0
+// Built from tag v2.6.0-beta-1
 
 package no.fint.model.administrasjon.personal;
 
@@ -26,6 +26,7 @@ public class Arbeidsforhold implements FintMainObject {
             TIMERPERUKE,
             ARBEIDSSTED,
             PERSONALLEDER,
+            FRAVAR,
             LONN,
             PERSONALRESSURS,
             UNDERVISNINGSFORHOLD
