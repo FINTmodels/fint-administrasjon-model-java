@@ -1,4 +1,4 @@
-// Built from tag v2.6.0-beta-1
+// Built from tag v0.99.0
 
 package no.fint.model.administrasjon.kodeverk;
 
@@ -10,18 +10,15 @@ import lombok.NonNull;
 import java.util.List;
 import no.fint.model.*;
 
-import no.fint.model.administrasjon.kodeverk.Kontodimensjon;
+import no.fint.model.felles.basisklasser.Begrep;
 
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper=true)
 @ToString(callSuper=true)
-public class Ansvar extends Kontodimensjon implements FintMainObject {
+public class Ansvar extends Begrep implements FintMainObject {
     public enum Relasjonsnavn {
-            OVERORDNET,
-            UNDERORDNET,
-            ORGANISASJONSELEMENT,
-            FULLMAKT
+            FORELDER
     }
 
 }

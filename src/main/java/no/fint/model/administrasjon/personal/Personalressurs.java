@@ -1,4 +1,4 @@
-// Built from tag v2.6.0-beta-1
+// Built from tag v0.99.0
 
 package no.fint.model.administrasjon.personal;
 
@@ -22,17 +22,14 @@ public class Personalressurs implements FintMainObject {
     public enum Relasjonsnavn {
             PERSONALRESSURSKATEGORI,
             ARBEIDSFORHOLD,
-            PERSON,
-            STEDFORTREDER,
-            FULLMAKT,
-            LEDER,
-            PERSONALANSVAR
+            PERSON
     }
 
     @NonNull
     private Identifikator ansattnummer;
     @NonNull
     private Periode ansettelsesperiode;
+    @NonNull
     private Identifikator brukernavn;
     private Kontaktinformasjon kontaktinformasjon;
     private Identifikator systemId;

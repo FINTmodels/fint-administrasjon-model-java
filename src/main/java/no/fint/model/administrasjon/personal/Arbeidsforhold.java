@@ -1,4 +1,4 @@
-// Built from tag v2.6.0-beta-1
+// Built from tag v0.99.0
 
 package no.fint.model.administrasjon.personal;
 
@@ -25,15 +25,14 @@ public class Arbeidsforhold implements FintMainObject {
             STILLINGSKODE,
             TIMERPERUKE,
             ARBEIDSSTED,
-            PERSONALLEDER,
-            FRAVAR,
-            LONN,
             PERSONALRESSURS,
             UNDERVISNINGSFORHOLD
     }
 
     @NonNull
     private Long ansettelsesprosent;
+    @NonNull
+    private Long arslonn;
     @NonNull
     private Periode gyldighetsperiode;
     @NonNull
@@ -47,6 +46,4 @@ public class Arbeidsforhold implements FintMainObject {
     private Identifikator systemId;
     @NonNull
     private Long tilstedeprosent;
-    @NonNull
-    private Long arslonn;
 }

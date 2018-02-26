@@ -1,4 +1,4 @@
-// Built from tag v2.6.0-beta-1
+// Built from tag v0.99.0
 
 package no.fint.model.administrasjon.organisasjon;
 
@@ -20,7 +20,6 @@ import no.fint.model.felles.basisklasser.Enhet;
 @ToString(callSuper=true)
 public class Organisasjonselement extends Enhet implements FintMainObject {
     public enum Relasjonsnavn {
-            ANSVAR,
             LEDER,
             OVERORDNET,
             UNDERORDNET,
