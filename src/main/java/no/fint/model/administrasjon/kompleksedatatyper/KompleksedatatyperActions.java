@@ -1,15 +1,12 @@
 // Built from tag v0.99.9
 
-package no.fint.model.administrasjon.organisasjon;
+package no.fint.model.administrasjon.kompleksedatatyper;
 
 import java.util.Arrays;
 import java.util.List;
 
-public enum OrganisasjonActions {
+public enum KompleksedatatyperActions {
 	
-	GET_ORGANISASJONSELEMENT,
-	GET_ALL_ORGANISASJONSELEMENT,
-	UPDATE_ORGANISASJONSELEMENT
 	;
 
 
@@ -20,7 +17,7 @@ public enum OrganisasjonActions {
      */
     public static List<String> getActions() {
         return Arrays.asList(
-                Arrays.stream(OrganisasjonActions.class.getEnumConstants()).map(Enum::name).toArray(String[]::new)
+                Arrays.stream(KompleksedatatyperActions.class.getEnumConstants()).map(Enum::name).toArray(String[]::new)
         );
     }
 

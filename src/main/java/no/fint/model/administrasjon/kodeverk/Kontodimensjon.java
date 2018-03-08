@@ -10,15 +10,11 @@ import lombok.NonNull;
 import java.util.List;
 import no.fint.model.*;
 
-import no.fint.model.administrasjon.kodeverk.Kontodimensjon;
+import no.fint.model.felles.basisklasser.Begrep;
 
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper=true)
 @ToString(callSuper=true)
-public class Prosjekt extends Kontodimensjon implements FintMainObject {
-    public enum Relasjonsnavn {
-            FULLMAKT
-    }
-
+public abstract class Kontodimensjon extends Begrep implements FintAbstractObject {
 }

@@ -1,15 +1,18 @@
 // Built from tag v0.99.9
 
-package no.fint.model.administrasjon.organisasjon;
+package no.fint.model.administrasjon.fullmakt;
 
 import java.util.Arrays;
 import java.util.List;
 
-public enum OrganisasjonActions {
+public enum FullmaktActions {
 	
-	GET_ORGANISASJONSELEMENT,
-	GET_ALL_ORGANISASJONSELEMENT,
-	UPDATE_ORGANISASJONSELEMENT
+	GET_FULLMAKT,
+	GET_ALL_FULLMAKT,
+	UPDATE_FULLMAKT,
+	GET_ROLLE,
+	GET_ALL_ROLLE,
+	UPDATE_ROLLE
 	;
 
 
@@ -20,7 +23,7 @@ public enum OrganisasjonActions {
      */
     public static List<String> getActions() {
         return Arrays.asList(
-                Arrays.stream(OrganisasjonActions.class.getEnumConstants()).map(Enum::name).toArray(String[]::new)
+                Arrays.stream(FullmaktActions.class.getEnumConstants()).map(Enum::name).toArray(String[]::new)
         );
     }
 

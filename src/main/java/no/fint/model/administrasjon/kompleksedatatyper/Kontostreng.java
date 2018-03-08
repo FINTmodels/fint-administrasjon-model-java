@@ -1,6 +1,6 @@
 // Built from tag v0.99.9
 
-package no.fint.model.administrasjon.kodeverk;
+package no.fint.model.administrasjon.kompleksedatatyper;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,15 +10,16 @@ import lombok.NonNull;
 import java.util.List;
 import no.fint.model.*;
 
-import no.fint.model.administrasjon.kodeverk.Kontodimensjon;
-
 @Data
 @NoArgsConstructor
-@EqualsAndHashCode(callSuper=true)
-@ToString(callSuper=true)
-public class Prosjekt extends Kontodimensjon implements FintMainObject {
+@EqualsAndHashCode
+@ToString
+public class Kontostreng implements FintComplexDatatypeObject {
     public enum Relasjonsnavn {
-            FULLMAKT
+            ANSVAR,
+            ART,
+            FUNKSJON,
+            PROSJEKT
     }
 
 }
