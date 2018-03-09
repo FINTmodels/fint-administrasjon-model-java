@@ -1,6 +1,7 @@
 package no.fint.model.administrasjon
 
 import no.fint.model.test.utils.JsonSnapshots
+import spock.lang.Ignore
 import spock.lang.Requires
 import spock.lang.Specification
 
