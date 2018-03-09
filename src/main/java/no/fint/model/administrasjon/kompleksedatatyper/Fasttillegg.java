@@ -1,4 +1,4 @@
-// Built from tag v0.99.9
+// Built from tag v2.6.0-beta-2
 
 package no.fint.model.administrasjon.kompleksedatatyper;
 
@@ -10,18 +10,21 @@ import lombok.NonNull;
 import java.util.List;
 import no.fint.model.*;
 
+import no.fint.model.administrasjon.kompleksedatatyper.Kontostreng;
+
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode
 @ToString
 public class Fasttillegg implements FintComplexDatatypeObject {
     public enum Relasjonsnavn {
-            LONNSART,
-            KONTOSTRENG
+            LONNSART
     }
 
     @NonNull
     private Long belop;
     @NonNull
     private String beskrivelse;
+    @NonNull
+    private Kontostreng kontostreng;
 }

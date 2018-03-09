@@ -1,6 +1,6 @@
 // Built from tag v2.6.0-beta-2
 
-package no.fint.model.administrasjon.kompleksedatatyper;
+package no.fint.model.administrasjon.fravar;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,25 +10,26 @@ import lombok.NonNull;
 import java.util.List;
 import no.fint.model.*;
 
-import no.fint.model.administrasjon.kompleksedatatyper.Kontostreng;
 import no.fint.model.felles.kompleksedatatyper.Periode;
+import no.fint.model.felles.kompleksedatatyper.Identifikator;
 
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode
 @ToString
-public class Variabelttillegg implements FintComplexDatatypeObject {
+public class Fravar implements FintMainObject {
     public enum Relasjonsnavn {
-            LONNSART
+            FRAVARSTYPE,
+            FRAVARSGRUNN,
+            ARBEIDSFORHOLD,
+            FORTSETTELSE,
+            FORTSETTER
     }
 
     @NonNull
-    private Long antall;
-    private Long belop;
-    @NonNull
-    private String beskrivelse;
-    @NonNull
-    private Kontostreng kontostreng;
-    @NonNull
     private Periode periode;
+    @NonNull
+    private Long prosent;
+    @NonNull
+    private Identifikator systemId;
 }
