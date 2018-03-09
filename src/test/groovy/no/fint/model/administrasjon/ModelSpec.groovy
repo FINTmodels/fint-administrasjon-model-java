@@ -17,6 +17,7 @@ class ModelSpec extends Specification {
         jsonSnapshots.create()
     }
 
+    @Ignore
     def "Matches snapshots"() {
         expect:
         jsonSnapshots.matchesSnapshots()
