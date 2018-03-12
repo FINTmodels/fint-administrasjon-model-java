@@ -1,6 +1,6 @@
-// Built from tag v2.6.0-beta-2
+// Built from tag v2.6.0-beta-3
 
-package no.fint.model.administrasjon.fravar;
+package no.fint.model.administrasjon.kodeverk;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

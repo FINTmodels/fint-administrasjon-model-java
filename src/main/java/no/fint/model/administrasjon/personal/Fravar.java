@@ -1,6 +1,6 @@
-// Built from tag v2.6.0-beta-2
+// Built from tag v2.6.0-beta-3
 
-package no.fint.model.administrasjon.fravar;
+package no.fint.model.administrasjon.personal;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -19,8 +19,8 @@ import no.fint.model.felles.kompleksedatatyper.Identifikator;
 @ToString
 public class Fravar implements FintMainObject {
     public enum Relasjonsnavn {
-            FRAVARSTYPE,
             FRAVARSGRUNN,
+            FRAVARSTYPE,
             ARBEIDSFORHOLD,
             FORTSETTELSE,
             FORTSETTER

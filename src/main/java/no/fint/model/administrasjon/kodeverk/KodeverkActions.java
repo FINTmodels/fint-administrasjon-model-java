@@ -1,4 +1,4 @@
-// Built from tag v2.6.0-beta-2
+// Built from tag v2.6.0-beta-3
 
 package no.fint.model.administrasjon.kodeverk;
 
@@ -16,6 +16,12 @@ public enum KodeverkActions {
 	GET_ART,
 	GET_ALL_ART,
 	UPDATE_ART,
+	GET_FRAVARSGRUNN,
+	GET_ALL_FRAVARSGRUNN,
+	UPDATE_FRAVARSGRUNN,
+	GET_FRAVARSTYPE,
+	GET_ALL_FRAVARSTYPE,
+	UPDATE_FRAVARSTYPE,
 	GET_FUNKSJON,
 	GET_ALL_FUNKSJON,
 	UPDATE_FUNKSJON,
