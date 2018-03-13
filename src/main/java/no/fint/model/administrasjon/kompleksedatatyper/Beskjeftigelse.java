@@ -1,4 +1,4 @@
-// Built from tag v2.6.0-beta-3
+// Built from tag v2.6.0-rc-1
 
 package no.fint.model.administrasjon.kompleksedatatyper;
 
@@ -11,6 +11,7 @@ import java.util.List;
 import no.fint.model.*;
 
 import no.fint.model.administrasjon.kompleksedatatyper.Kontostreng;
+import no.fint.model.felles.kompleksedatatyper.Periode;
 
 @Data
 @NoArgsConstructor
@@ -25,6 +26,7 @@ public class Beskjeftigelse implements FintComplexDatatypeObject {
     private String beskrivelse;
     @NonNull
     private Kontostreng kontostreng;
+    private Periode periode;
     @NonNull
     private Long prosent;
 }
