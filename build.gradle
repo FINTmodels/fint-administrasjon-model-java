@@ -1,6 +1,6 @@
 plugins {
-    id 'com.jfrog.bintray' version '1.7.3'
-    id 'com.github.ben-manes.versions' version '0.15.0'
+    id 'com.jfrog.bintray' version '1.8.0'
+    id 'com.github.ben-manes.versions' version '0.17.0'
 }
 
 apply plugin: 'java'
@@ -21,11 +21,12 @@ repositories {
     jcenter()
 }
 
-apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.1.0/dependencies.gradle'
+apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.3.0/dependencies.gradle'
 dependencies {
     compile('no.fint:fint-model-core:0.0.2-1')
 
-    compile("no.fint:fint-felles-model-java:${version}")
+    //compile("no.fint:fint-felles-model-java:${version}")
+    compile("no.fint:fint-felles-model-java:2.6.0-rc-1")
 
     compileOnly("org.projectlombok:lombok:${lombokVersion}")
 
@@ -43,5 +44,5 @@ test {
 }
 
 if (project.hasProperty('bintrayUser') && project.hasProperty('bintrayKey')) {
-    apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.1.0/bintray.gradle'
+    apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.3.0/bintray.gradle'
 }
