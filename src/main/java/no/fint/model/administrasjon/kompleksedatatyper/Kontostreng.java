@@ -1,4 +1,4 @@
-// Built from tag v2.6.0-rc-1
+// Built from tag feature-betaling
 
 package no.fint.model.administrasjon.kompleksedatatyper;
 
@@ -22,4 +22,9 @@ public class Kontostreng implements FintComplexDatatypeObject {
             PROSJEKT
     }
 
+    private String dim5;
+    private String dim6;
+    private String dim7;
+    private String dim8;
+    private String dim9;
 }
