@@ -11,20 +11,13 @@ import java.util.List;
 import no.fint.model.*;
 
 import no.fint.model.felles.kompleksedatatyper.Identifikator;
-import no.fint.model.administrasjon.betaling.Ordrelinje;
+import no.fint.model.felles.basisklasser.Aktor;
 
 @Data
 @NoArgsConstructor
-@EqualsAndHashCode
-@ToString
-public class Ordre implements FintMainObject {
-    public enum Relasjonsnavn {
-            BETALING,
-            MOTTAKER
-    }
-
+@EqualsAndHashCode(callSuper=true)
+@ToString(callSuper=true)
+public class Kunde extends Aktor implements FintMainObject {
     @NonNull
-    private Identifikator ordreId;
-    @NonNull
-    private List<Ordrelinje> ordrelinje;
+    private Identifikator kundenummer;
 }
