@@ -1,4 +1,4 @@
-// Built from tag v2.6.0
+// Built from tag v2.7.0
 
 package no.fint.model.administrasjon.personal;
 
@@ -26,7 +26,8 @@ public class Personalressurs implements FintMainObject {
             STEDFORTREDER,
             FULLMAKT,
             LEDER,
-            PERSONALANSVAR
+            PERSONALANSVAR,
+            SKOLERESSURS
     }
 
     @NonNull
