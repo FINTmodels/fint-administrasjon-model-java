@@ -1,4 +1,4 @@
-// Built from tag v2.7.0
+// Built from tag v2.8.0
 
 package no.fint.model.administrasjon.kodeverk;
 
@@ -17,6 +17,5 @@ import no.fint.model.felles.basisklasser.Begrep;
 @EqualsAndHashCode(callSuper=true)
 @ToString(callSuper=true)
 public class Lonnsart extends Begrep implements FintMainObject {
-    @NonNull
     private String kategori;
 }

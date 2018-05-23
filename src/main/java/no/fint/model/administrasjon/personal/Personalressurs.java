@@ -1,4 +1,4 @@
-// Built from tag v2.7.0
+// Built from tag v2.8.0
 
 package no.fint.model.administrasjon.personal;
 
@@ -12,6 +12,7 @@ import no.fint.model.*;
 
 import no.fint.model.felles.kompleksedatatyper.Identifikator;
 import no.fint.model.felles.kompleksedatatyper.Periode;
+import java.util.Date;
 import no.fint.model.felles.kompleksedatatyper.Kontaktinformasjon;
 
 @Data
@@ -34,6 +35,8 @@ public class Personalressurs implements FintMainObject {
     private Identifikator ansattnummer;
     @NonNull
     private Periode ansettelsesperiode;
+    @NonNull
+    private Date ansiennitet;
     private Identifikator brukernavn;
     private Kontaktinformasjon kontaktinformasjon;
     private Identifikator systemId;
