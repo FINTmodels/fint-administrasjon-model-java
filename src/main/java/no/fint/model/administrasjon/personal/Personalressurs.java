@@ -35,7 +35,6 @@ public class Personalressurs implements FintMainObject {
     private Identifikator ansattnummer;
     @NonNull
     private Periode ansettelsesperiode;
-    @NonNull
     private Date ansiennitet;
     private Identifikator brukernavn;
     private Kontaktinformasjon kontaktinformasjon;
