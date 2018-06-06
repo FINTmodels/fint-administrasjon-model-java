@@ -1,4 +1,4 @@
-// Built from tag v2.8.0
+// Built from tag v3.0.0-rc-1
 
 package no.fint.model.administrasjon.personal;
 
@@ -10,8 +10,6 @@ import lombok.NonNull;
 import java.util.List;
 import no.fint.model.*;
 
-import no.fint.model.administrasjon.kompleksedatatyper.Beskjeftigelse;
-import no.fint.model.administrasjon.kompleksedatatyper.Fasttillegg;
 import no.fint.model.administrasjon.personal.Lonn;
 
 @Data
@@ -20,6 +18,7 @@ import no.fint.model.administrasjon.personal.Lonn;
 @ToString(callSuper=true)
 public class Fastlonn extends Lonn implements FintMainObject {
     public enum Relasjonsnavn {
+            LONNSART,
             ANVISER,
             KONTERER,
             ATTESTANT,
@@ -27,7 +26,5 @@ public class Fastlonn extends Lonn implements FintMainObject {
     }
 
     @NonNull
-    private List<Beskjeftigelse> beskjeftigelse;
-    @NonNull
-    private List<Fasttillegg> fasttillegg;
+    private Long prosent;
 }

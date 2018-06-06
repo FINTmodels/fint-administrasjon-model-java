@@ -1,4 +1,4 @@
-// Built from tag v2.8.0
+// Built from tag v3.0.0-rc-1
 
 package no.fint.model.administrasjon.personal;
 
@@ -11,6 +11,7 @@ import java.util.List;
 import no.fint.model.*;
 
 import java.util.Date;
+import no.fint.model.administrasjon.kompleksedatatyper.Kontostreng;
 import no.fint.model.felles.kompleksedatatyper.Periode;
 import no.fint.model.felles.kompleksedatatyper.Identifikator;
 
@@ -21,9 +22,13 @@ import no.fint.model.felles.kompleksedatatyper.Identifikator;
 public abstract class Lonn implements FintAbstractObject {
     private Date anvist;
     private Date attestert;
+    @NonNull
+    private String beskrivelse;
     private Date kontert;
     @NonNull
-    private Periode periode;
+    private Kontostreng kontostreng;
+    private Periode opptjent;
     @NonNull
+    private Periode periode;
     private Identifikator systemId;
 }

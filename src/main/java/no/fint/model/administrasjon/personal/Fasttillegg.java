@@ -16,7 +16,7 @@ import no.fint.model.administrasjon.personal.Lonn;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper=true)
 @ToString(callSuper=true)
-public class Variabellonn extends Lonn implements FintMainObject {
+public class Fasttillegg extends Lonn implements FintMainObject {
     public enum Relasjonsnavn {
             LONNSART,
             ANVISER,
@@ -26,6 +26,5 @@ public class Variabellonn extends Lonn implements FintMainObject {
     }
 
     @NonNull
-    private Long antall;
     private Long belop;
 }
