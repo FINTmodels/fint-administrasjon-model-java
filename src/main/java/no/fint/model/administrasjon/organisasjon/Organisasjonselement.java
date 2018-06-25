@@ -1,4 +1,4 @@
-// Built from tag v3.0.0
+// Built from tag feature-fordring
 
 package no.fint.model.administrasjon.organisasjon;
 
@@ -8,8 +8,7 @@ import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import lombok.NonNull;
 import java.util.List;
-import no.fint.model.*;
-
+import no.fint.model.FintMainObject;
 import no.fint.model.felles.kompleksedatatyper.Periode;
 import no.fint.model.felles.kompleksedatatyper.Identifikator;
 import no.fint.model.felles.basisklasser.Enhet;
@@ -24,6 +23,7 @@ public class Organisasjonselement extends Enhet implements FintMainObject {
             LEDER,
             OVERORDNET,
             UNDERORDNET,
+            OPPDRAGSGIVER,
             SKOLE,
             ARBEIDSFORHOLD
     }
