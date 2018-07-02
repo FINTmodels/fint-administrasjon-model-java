@@ -23,20 +23,14 @@ public class Fakturagrunnlag implements FintMainObject {
             OPPDRAGSGIVER
     }
 
-    @NonNull
     private Long avgifter;
-    @NonNull
     private Date fakturadato;
     @NonNull
     private List<Fakturalinje> fakturalinjer;
     @NonNull
     private Identifikator fakturanummer;
-    @NonNull
     private Date forfallsdato;
-    @NonNull
     private Date leveringsdato;
-    @NonNull
     private Long netto;
-    @NonNull
     private Long total;
 }
