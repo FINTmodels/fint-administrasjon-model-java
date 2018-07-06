@@ -27,10 +27,11 @@ public class Fakturagrunnlag implements FintMainObject {
     private Date fakturadato;
     @NonNull
     private List<Fakturalinje> fakturalinjer;
-    @NonNull
     private Identifikator fakturanummer;
     private Date forfallsdato;
     private Date leveringsdato;
     private Long netto;
+    @NonNull
+    private Identifikator ordrenummer;
     private Long total;
 }
