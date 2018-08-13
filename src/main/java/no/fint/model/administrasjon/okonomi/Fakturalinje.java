@@ -20,7 +20,7 @@ public class Fakturalinje implements FintComplexDatatypeObject {
     }
 
     @NonNull
-    private Long antall;
+    private Float antall;
     @NonNull
     private List<String> fritekst;
     @NonNull

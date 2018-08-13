@@ -16,4 +16,6 @@ import no.fint.model.felles.basisklasser.Begrep;
 @EqualsAndHashCode(callSuper=true)
 @ToString(callSuper=true)
 public class Mvakode extends Begrep implements FintMainObject {
+    @NonNull
+    private Long promille;
 }

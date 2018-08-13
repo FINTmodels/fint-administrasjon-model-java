@@ -24,7 +24,6 @@ public class Varelinje extends Begrep implements FintMainObject {
 
     @NonNull
     private String enhet;
-    @NonNull
     private Kontostreng kontering;
     @NonNull
     private Long pris;
