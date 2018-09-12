@@ -9,10 +9,6 @@ apply plugin: 'maven'
 
 sourceCompatibility = 1.8
 
-jar {
-    baseName = 'fint-administrasjon-model-java'
-}
-
 repositories {
     maven {
         url "http://dl.bintray.com/fint/maven"
