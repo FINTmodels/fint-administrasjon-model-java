@@ -1,4 +1,4 @@
-// Built from tag v3.0.0
+// Built from tag v3.1.0-rc-1
 
 package no.fint.model.administrasjon.personal;
 
@@ -8,7 +8,8 @@ import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import lombok.NonNull;
 import java.util.List;
-import no.fint.model.FintAbstractObject;
+import no.fint.model.*;
+
 import java.util.Date;
 import no.fint.model.administrasjon.kompleksedatatyper.Kontostreng;
 import no.fint.model.felles.kompleksedatatyper.Periode;
