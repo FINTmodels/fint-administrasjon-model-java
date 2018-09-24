@@ -1,4 +1,4 @@
-// Built from tag v3.1.0-rc-1
+// Built from tag v3.1.0
 
 package no.fint.model.administrasjon.kompleksedatatyper;
 
@@ -8,7 +8,7 @@ import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import lombok.NonNull;
 import java.util.List;
-import no.fint.model.*;
+import no.fint.model.FintComplexDatatypeObject;
 
 @Data
 @NoArgsConstructor
