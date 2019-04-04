@@ -1,4 +1,4 @@
-// Built from tag v3.1.0
+// Built from tag v3.2.0-rc-1
 
 package no.fint.model.administrasjon.personal;
 
@@ -18,10 +18,10 @@ import no.fint.model.administrasjon.personal.Lonn;
 public class Fastlonn extends Lonn implements FintMainObject {
     public enum Relasjonsnavn {
             LONNSART,
+            ARBEIDSFORHOLD,
             ANVISER,
             KONTERER,
-            ATTESTANT,
-            ARBEIDSFORHOLD
+            ATTESTANT
     }
 
     @NonNull

@@ -1,4 +1,4 @@
-// Built from tag v3.1.0
+// Built from tag v3.2.0-rc-1
 
 package no.fint.model.administrasjon.personal;
 
@@ -20,13 +20,17 @@ public class Arbeidsforhold implements FintMainObject {
     public enum Relasjonsnavn {
             ANSVAR,
             ARBEIDSFORHOLDSTYPE,
+            ART,
             FUNKSJON,
             STILLINGSKODE,
             TIMERPERUKE,
             ARBEIDSSTED,
             PERSONALLEDER,
+            FASTLONN,
+            FASTTILLEGG,
             FRAVAR,
             LONN,
+            VARIABELLONN,
             PERSONALRESSURS,
             UNDERVISNINGSFORHOLD
     }
