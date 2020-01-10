@@ -15,7 +15,7 @@ import no.fint.model.administrasjon.kodeverk.Kontodimensjon;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper=true)
 @ToString(callSuper=true)
-public class Art extends Kontodimensjon implements FintMainObject {
+public class Ramme extends Kontodimensjon implements FintMainObject {
     public enum Relasjonsnavn {
             FULLMAKT
     }

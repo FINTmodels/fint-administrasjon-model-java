@@ -1,4 +1,4 @@
-// Built from tag v3.3.0
+// Built from tag v3.4.0-rc-1
 
 package no.fint.model.administrasjon.personal;
 
@@ -38,6 +38,8 @@ public class Arbeidsforhold implements FintMainObject {
     @NonNull
     private Long ansettelsesprosent;
     @NonNull
+    private Long arslonn;
+    @NonNull
     private Periode gyldighetsperiode;
     @NonNull
     private Boolean hovedstilling;
@@ -50,6 +52,4 @@ public class Arbeidsforhold implements FintMainObject {
     private Identifikator systemId;
     @NonNull
     private Long tilstedeprosent;
-    @NonNull
-    private Long arslonn;
 }

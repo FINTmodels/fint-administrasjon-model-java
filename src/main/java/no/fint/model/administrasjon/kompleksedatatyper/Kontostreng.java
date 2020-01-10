@@ -1,4 +1,4 @@
-// Built from tag v3.3.0
+// Built from tag v3.4.0-rc-1
 
 package no.fint.model.administrasjon.kompleksedatatyper;
 
@@ -16,10 +16,17 @@ import no.fint.model.FintComplexDatatypeObject;
 @ToString
 public class Kontostreng implements FintComplexDatatypeObject {
     public enum Relasjonsnavn {
+            AKTIVITET,
+            ANLEGG,
             ANSVAR,
             ART,
+            DIVERSE,
             FUNKSJON,
-            PROSJEKT
+            KONTRAKT,
+            LOPENUMMER,
+            OBJEKT,
+            PROSJEKT,
+            RAMME
     }
 
 }
